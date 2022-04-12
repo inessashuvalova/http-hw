@@ -2,6 +2,15 @@
   "name": "http-hw",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "forever server.js",
+    "dev-server-watch": "forever -w server.js",
+    "lint": "eslint .",
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
   "repository": "https://github.com/inessashuvalova/http-hw.git",
   "author": "Inessa Shuvalova <inessa.shuvalova@mail.ru>",
   "license": "MIT",
