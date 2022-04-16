@@ -1,4 +1,4 @@
-const baseUrl = 'https://http-hw.herokuapp.com/';
+const baseUrl = '//https://http-server-ahj.herokuapp.com/';
 
 module.exports = function sendRequest(object, method, options, callbackfn, data = new FormData()) {
   const params = new URLSearchParams();
